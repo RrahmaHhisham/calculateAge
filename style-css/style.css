@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #161616 !important;
+  text-transform: capitalize;
+}
+
+.box {
+  width: 450px;
+  height: 550px;
+  background-image: url(../imgs/baack-ground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Dancing Script;
+  font-optical-sizing: auto;
+  border-radius: 10px;
+  color: #af986f !important;
+}
+
+.box form {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* tittle form */
+.box form h1 {
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* label and input */
+.box form .input-box {
+  width: 400px;
+  margin-top: 100px;
+}
+
+.box form .input-box input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.box form .input-box label {
+  font-size: 25px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.box form .output {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.box form .btn_submit {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  color: #af986f !important;
+  background-color: #161616;
+  border: 1px #af986f solid;
+  width: 200px;
+  margin-right: 10px;
+}
+
+/* message error */
+.box form .input-box #error {
+  display: block;
+  text-align: start;
+  font-size: 20px;
+  color: red !important;
+  margin-top: 20px;
+  background-color: #161616;
+}
+
+/* message age */
+.box #age {
+  font-size: 20px;
+  font-weight: 600;
+  color: #af986f !important;
+  display: flex;
+  justify-content: center;
+  background-color: #161616;
+
+}
+
+/* start media-quary  */
+
+@media (max-width: 768px) {
+  .box {
+    width: 400px;
+    
+  }
+
+  
+}
+@media (max-width: 425px) {
+  .box {
+    width: 100%;
+  }
+  .box form .input-box {
+    position: relative;
+    width: 350px;
+    margin-top: 100px;
+  }
+
+  .box form .input-box input {
+    position: relative;
+    width: 50%;
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .box form .input-box label {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  .box form .btn_submit {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #af986f !important;
+    background-color: #161616;
+    border: 1px #af986f solid;
+    width: 150px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .box  {
+    width: 100%;
+    overflow: hidden;
+    
+    /* justify-content: center; */
+  }
+  
+  .box form .input-box {
+    position: relative;
+    width: 280px;
+    margin-top: 100px;
+  }
+
+  .box form .input-box input {
+    position: relative;
+    width: 50%;
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .box form .input-box label {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  .box form .btn_submit {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #af986f !important;
+    background-color: #161616;
+    border: 1px #af986f solid;
+    width: 150px;
+    margin-right: 10px;
+  }
+}

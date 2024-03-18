@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="style-css/style.css">
+    <!-- link icon -->
+    <link rel="stylesheet" href="style-css/all.min.css">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Architects+Daughter&family=Cairo:wght@700&family=Dancing+Script&family=Jomhuria&family=Open+Sans:ital,wght@1,300&family=Pacifico&family=Rubik&family=Sacramento&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+        <form>
+            <h1>Calculating a person's age</h1>
+            <div class="input-box">
+                <label for="birthDate">Birthday date</label>
+                <input type="date" name="birthDate" id="birthDate">
+                <span id="error"></span>
+            </div>
+            <!-- <input type="submit" value="Calculate the age" class="button" onclick="age()"> -->
+            <div class="output">
+                <button type="button" class="btn_submit" onclick="calculateAge()">Calculate the age</button>
+            </div>
+        </form>
+        <!-- user output -->
+        <div id="age"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
